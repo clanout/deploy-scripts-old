@@ -1,0 +1,5 @@
+# Exclude appserver src
+/appserver/
+
+# Exclude frontserver src
+/frontserver/
