@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APP_SERVER_HOME=/home/ubuntu/codeX/projects/meishi/deploy/app_server
+APP_SERVER_HOME=/home/ubuntu/codeX/projects/reaper/deploy/appserver
 
 CONFIG_MODULE=$APP_SERVER_HOME/config
 LOG_MODULE=$APP_SERVER_HOME/log
@@ -14,4 +14,4 @@ mvn -f $PERSISTENCE_MODULE/pom.xml clean install
 mvn -f $CORE_MODULE/pom.xml clean install
 mvn -f $SERVER_MODULE/pom.xml clean install
 
-sudo cp $SERVER_MODULE/target/api.war /home/ubuntu/codeX/environment/tomcat/apache-tomcat-8.0.18/app_server/ROOT.war
+sudo cp $SERVER_MODULE/target/api.war $TOMCAT_APPSERVER_ROOT/reaper.war
