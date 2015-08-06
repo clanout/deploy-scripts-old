@@ -3,3 +3,6 @@
 
 # Exclude frontserver src
 /frontserver/
+
+# Exclude notificationserver src
+/notificationserver/

@@ -10,5 +10,5 @@ mkdir $NOTIFICATION_SERVER_HOME
 git clone git@bitbucket.org:reap3r/notificationserver.git $NOTIFICATION_SERVER_HOME
 
 echo "Deploying release configuration ..."
-sudo cp $CONF_HOME/db.conf $NOTIFICATION_SERVER_HOME/notificationserver/src/main/resources/conf/db.conf
-sudo cp $CONF_HOME/log4j.properties $NOTIFICATION_SERVER_HOME/notificationserver/src/main/resources/log4j.properties
+sudo cp $CONF_HOME/db.conf $NOTIFICATION_SERVER_HOME/src/main/resources/conf/db.conf
+sudo cp $CONF_HOME/log4j.properties $NOTIFICATION_SERVER_HOME/src/main/resources/log4j.properties
